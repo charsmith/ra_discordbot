@@ -2,6 +2,7 @@ FROM node:18
 
 COPY debian/sources.list /etc/apt/sources.list
 
+ENV JSON_PATH=/data/store.json
 RUN npm install -g nodemon
 RUN apt-get update
 RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
