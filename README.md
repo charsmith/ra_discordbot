@@ -17,16 +17,10 @@ RA_USER=<your retroachievements username>
 RA_API=<your retroachievements api key>
 ```
 
-3. build the docker image
+3. run it
 
 ```
-docker build . -t ra_discordbot
-```
-
-4. run it
-
-```
-docker run -v $(pwd)/.env:/discordbot/.env -v $(pwd)/data:/data ra_discordbot
+docker compose up
 ```
 
 ### commands

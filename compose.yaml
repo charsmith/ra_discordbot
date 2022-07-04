@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+    bot:
+        volumes:
+            - ./.env:/discordbot/.env
+            - ./data:/data
+        build:
+            context: .
+            dockerfile: Dockerfile
